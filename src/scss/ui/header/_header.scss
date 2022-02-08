@@ -9,7 +9,7 @@
     position: relative;
 
     @include m.tablet { 
-        padding: 3rem 0;
+        padding: 3rem 0 20rem 0;
     }
 
     &__barra {
@@ -31,18 +31,18 @@
             max-width: 50rem;
         }
     }
-    &__texto {
-        color: v.$blanco;
-        display: none;
-        @include m.tablet { 
-            display: block;
-        }
-    }
     &__heading {
         color: v.$blanco;
         text-align: center;
         @include m.tablet { 
             text-align: left;
+        }
+    }
+    &__texto {
+        color: v.$blanco;
+        display: none;
+        @include m.tablet { 
+            display: block;
         }
     }
     &__imagen {
@@ -51,7 +51,7 @@
             display: block;
             position: absolute;
             right: 0;
-            bottom: 0;
+            bottom: -5rem;
             max-width: 35rem;
             border-top-left-radius: 2rem;
             border-bottom-left-radius: 5rem;
@@ -69,7 +69,7 @@
     @include m.tablet { 
         flex-direction: row;
         gap: 2rem;
-        margin-top: 0rem;
+        margin-top: 0;
     }
     &__link {
         color: v.$blanco;
